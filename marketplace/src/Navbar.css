@@ -1,0 +1,167 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  height: auto;
+}
+.navbar {
+  position: fixed; /* Keeps the navbar always at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it's above other content */
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+body {
+  margin-top: 60px; /* Adjust this to match the navbar's height */
+}
+.navbar {
+  z-index: 1000; /* High enough to be on top */
+}
+.navbar-parent {
+  height: auto;
+  overflow: visible;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-cart {
+  position: relative;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-menu {
+  display: flex;
+}
+
+.navbar-dropdown-item {
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.navbar-dropdown-item:hover {
+  color: #007bff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.navbar-link:hover {
+  color: #0056b3;
+}
+.navbar-parent {
+  height: auto;
+  overflow: visible;
+}

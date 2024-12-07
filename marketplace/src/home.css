@@ -1,0 +1,89 @@
+/* Reset and global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Ensure body spans the entire viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #f8f9fa; /* Light background */
+  box-sizing: border-box; /* Include padding and borders in element width/height */
+}
+
+/* Main container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height to ensure content is scrollable */
+  padding: 20px;
+  gap: 20px; /* Space between elements */
+}
+
+/* Filter section */
+.category-filter {
+  margin-bottom: 20px;
+}
+
+/* Product grid container */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+/* Product card styles */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.product-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.product-card .stock-status {
+  color: green;
+  font-weight: bold;
+}
+
+.product-card .out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+
